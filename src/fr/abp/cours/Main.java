@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String tmp = "";
         char C = '\0';
+        int valeur;
 
         System.out.println("Entrez des chiffres et appuyez sur la touche entrée pour valider la saisie: ");
 
@@ -16,6 +17,10 @@ public class Main {
                 tmp = tmp + C;
 
             }
+            System.out.println("Vous avez entré: " + tmp);
+            valeur = Integer.parseInt(tmp);
+            System.out.println("C'est à dire " + valeur + " en entier");
         }
     }
+}
 
